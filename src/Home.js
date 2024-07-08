@@ -13,27 +13,17 @@ import { createBrowserRouter,
         Route,
         useNavigate,
         RouterProvider } from "react-router-dom";
-import Vegas from './Home/Vegas';
+import Vegas from './Vegas';
+import LosAngeles from "./LosAngeles";
 
 
-const router = createBrowserRouter(
-  createRoutesFromElements(
-    <Route path="/" element={<Vegas />}>
-      
-    </Route>
-  )
-);
+
 
 export default function Home() {
 
-
-
-
-  const routeChangeVegas = () =>{ 
-    
-  }
   return (
     <div className='Home'>
+
       <div className='Card_Vegas' >
         <Card sx={{width: 229 }}>
         <CardMedia
@@ -49,7 +39,7 @@ export default function Home() {
           </Typography>
         </CardContent>
         <CardActions>
-          <Button size="small" onClick={routeChangeVegas}>Learn More</Button>
+        <Button size="small" onClick={() => { window.location.href = '/Vegas';  }}>Learn More</Button>
         </CardActions>
       </Card>
       </div>
@@ -70,11 +60,13 @@ export default function Home() {
           </Typography>
         </CardContent>
         <CardActions>
-          <Button size="small" onClick={() => { window.location.href = './Home/Vegas.js';  }}>Learn More</Button>
+          <Button size="small" onClick={() => { window.location.href = '/LosAngeles';  }}>Learn More</Button>
         </CardActions>
       </Card>
-   
-
+      <Routes>
+        <Route path="/Vegas" element={<Vegas />}/>
+        <Route path="/LosAngeles" element={<LosAngeles />}/>
+      </Routes>
       </div>
     </div>
 
@@ -82,18 +74,3 @@ export default function Home() {
   );
 }
 
-
-
-export class Class1 extends Component {
-  render() {
-     return (
-      
-      ReactDOM.createRoot(document.getElementById("root")).render(
-        <React.StrictMode>
-          <RouterProvider router={router} />
-        </React.StrictMode>
-      )
-
-     )
-  }
-}

@@ -33,11 +33,11 @@ const Starwars = () => {
     <body>
       <div className="Starwars">
       <h1>Liste des Jedis</h1>
-
-      <ul>
-        {listItems}
-      </ul>;
-
+      <nav>
+        <ul>
+          {listItems}
+        </ul>;
+      </nav>
       
     </div>
     </body>

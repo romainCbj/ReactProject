@@ -8,7 +8,7 @@ import Formulaire from './formulaire';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Inputs from './Inputs';
-import Vegas from './Home/Vegas';
+import Vegas from './Vegas';
 import Connexion from './Connexion';
 
 console.log("index "  + new Date().toString());
@@ -22,7 +22,7 @@ root.render(
           <Route path="/DragDrop" element = {<DragDrop />}>   </Route>
           <Route path="/Formulaire" element = {<Formulaire />}>   </Route>
           <Route path="/Inputs" element = {<Inputs />}>    </Route>
-          <Route path="/Home/Vegas" element = {<Vegas />}>    </Route>
+          <Route path="/Vegas" element = {<Vegas />}>    </Route>
       </Routes>
     </Router>
   </React.StrictMode>

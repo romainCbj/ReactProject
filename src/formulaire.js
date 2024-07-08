@@ -62,7 +62,6 @@ const Formulaire = () => {
   
       const message = "Username : " + formData.username +". Téléphone : "+formData.telephone+ "."
       alert (message);
-  
     }
   
 
@@ -102,8 +101,6 @@ const Formulaire = () => {
       event.preventDefault();
       if (validateForm()) {
         console.log(formData);
-
-
         const test = {
           Name: formData.username,
           Telephone : formData.telephone,
@@ -116,7 +113,6 @@ const Formulaire = () => {
           if(res.data == true)
           {
               alert (test.username + " a " + test.Age + " ans")
-             
           }
           console.log(res);
           console.log(res.data);
@@ -134,43 +130,35 @@ const Formulaire = () => {
     return (
       <form onSubmit={handleSubmit}>
         <div>
-<label>{}</label>
-        <label>
-          Username:
-          <input
-            type="text"
-            name="username"
-            value={formData.username}
-            onChange={handleChange}
-            
-          />
-          {formData.errors.username && (
-            <p style={{ color: "red" }}>{formData.errors.username}</p>
-          )}
-        </label>
-        <div>
-        <label>
-          Telephone:
-  
-          <input
-            type="text"
-            name="telephone"
-            value={formData.telephone}
-            onChange={e => { CheckIfIsNUmber(e); handleChange(e) }}
-            onBlur = {CheckIfNumberPhoneIsValid}
-  
-            
-          />
-          {formData.errors.telephone && (
-            <p style={{ color: "red" }}>{formData.errors.telephone}</p>
-          )}
-                  </label>
-         <p style={{ color: "red" }}>{formData.errorMessage}</p>
+          <label>
+            Username:
+            <input
+              type="text"
+              name="username"
+              value={formData.username}
+              onChange={handleChange}
+            />
+            {formData.errors.username && (<p style={{ color: "red" }}>{formData.errors.username}</p>            )}
+          </label>
+          <div>
+            <label>
+              Telephone:
+              <input
+                type="text"
+                name="telephone"
+                value={formData.telephone}
+                onChange={e => { CheckIfIsNUmber(e); handleChange(e) }}
+                onBlur = {CheckIfNumberPhoneIsValid}
+              />
+              {formData.errors.telephone && (
+                <p style={{ color: "red" }}>{formData.errors.telephone}</p>
+              )}
+            </label>
+            <p style={{ color: "red" }}>{formData.errorMessage}</p>
+          </div>
         </div>
-        </div>
-       
         <div>
-        <button type ="submit" value = "submit" name="FrmButton" onClick={Methodes.Alerte}>OK </button>
+          <button type ="submit" value = "submit" name="FrmButton" onClick={Methodes.Alerte}>OK </button>
         </div>
         
         <h1>{formData.username }</h1>

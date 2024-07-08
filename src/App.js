@@ -26,10 +26,7 @@ function App() {
               </li>
             </ul>
           </nav>
-
             </div>
-            
-
         </div>
     </header>
    
