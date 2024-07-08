@@ -8,15 +8,17 @@ function Vegas() {
   return (
 
        <div>
-        <div>
+        <div class='Retour'>
         <a href="/Home">Retour</a>
         </div>
-        
+        <div class='Texte'>
+        Vegas c'est trop bien !
+        </div>
             <Routes>
               <Route path="/Home" element={<Home />}/>
             
             </Routes>
-        Vegas c'est trop bien !
+        
         
         </div>
 
