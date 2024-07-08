@@ -39,7 +39,7 @@ export default function Home() {
           </Typography>
         </CardContent>
         <CardActions>
-        <Button size="small" onClick={() => { window.location.href = '/Vegas';  }}>Learn More</Button>
+        <Button size="small" onClick={() => { window.location.href = '/Vegas';  }}>En savoir plus...</Button>
         </CardActions>
       </Card>
       </div>
@@ -60,7 +60,7 @@ export default function Home() {
           </Typography>
         </CardContent>
         <CardActions>
-          <Button size="small" onClick={() => { window.location.href = '/LosAngeles';  }}>Learn More</Button>
+          <Button size="small" onClick={() => { window.location.href = '/LosAngeles';  }}>En savoir plus...</Button>
         </CardActions>
       </Card>
       <Routes>

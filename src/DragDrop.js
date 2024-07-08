@@ -1,5 +1,4 @@
 
-import './App.css';
 import React, { useEffect, useState } from 'react'; 
 
 console.log("Drag drop "  + new Date().toString());
@@ -31,7 +30,7 @@ const Starwars = () => {
   
   return (
     <body>
-      <div className="Starwars">
+      <div class="Starwars">
       <h1>Liste des Jedis</h1>
       <nav>
         <ul>
