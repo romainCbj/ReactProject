@@ -162,7 +162,7 @@ const Formulaire = () => {
         </div>
         
         <h1>{formData.username }</h1>
-        <h1>test {MessageSuccess}</h1>
+        <h1>{MessageSuccess}</h1>
         
 
       </form>
