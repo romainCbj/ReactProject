@@ -16,7 +16,6 @@ function Vegas() {
         </div>
             <Routes>
               <Route path="/Home" element={<Home />}/>
-            
             </Routes>
         
         

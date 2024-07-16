@@ -22,6 +22,8 @@ function ToDo() {
         <div>
             <input type="Text" placeholder="Saisissez une tache" onKeyDown={submit}></input>
             <table>
+                <th>tache</th>
+                <th>Action</th>
                 <tbody>
                     {taskList.length>0 ? taskList.map((task => 
                         <tr >

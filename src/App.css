@@ -120,3 +120,8 @@ nav ul li a:hover {
   padding-left: 2%;
   float: left;
 }
+table, th, td {
+  border: 1px solid;
+  margin-top: 3%;
+  margin-left: 45%;
+}
