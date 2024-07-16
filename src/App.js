@@ -24,6 +24,9 @@ function App() {
               <li>
                 <a href="/Inputs">Inputs</a>
               </li>
+              <li>
+                <a href="/ToDo">To do list</a>
+              </li>
             </ul>
           </nav>
             </div>

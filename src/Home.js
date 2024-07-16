@@ -49,7 +49,7 @@ export default function Home() {
         <Card sx={{ width: 229 }}>
         <CardMedia
           sx={{ height: 140 }}
-          image={require('./Hollywood.jpg')}
+          image={requir0e('./Hollywood.jpg')}
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
@@ -68,9 +68,7 @@ export default function Home() {
         <Route path="/LosAngeles" element={<LosAngeles />}/>
       </Routes>
       </div>
-    </div>
-
-    
+    </div> 
   );
 }
 

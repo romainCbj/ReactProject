@@ -10,6 +10,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Inputs from './Inputs';
 import Vegas from './Vegas';
 import LosAngeles from './LosAngeles';
+import ToDo from './ToDo';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -23,6 +24,7 @@ root.render(
           <Route path="/Inputs" element = {<Inputs />}>    </Route>
           <Route path="/Vegas" element = {<Vegas />}>    </Route>
           <Route path="/LosAngeles" element = {<LosAngeles />}>    </Route>
+          <Route path="/ToDo" element = {<ToDo />}>    </Route>
       </Routes>
     </Router>
   </React.StrictMode>,
