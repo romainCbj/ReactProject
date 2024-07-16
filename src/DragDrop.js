@@ -20,23 +20,23 @@ const Starwars = () => {
     const people =posts.results
     console.log(people)
     const listItems = people?.map(person =>
-      <li>
-        <p>
+      <tr>
+        <td>
           <b>{person.name}:</b>
       
-        </p>
-      </li>
+        </td>
+      </tr>
     );
   
   return (
     <body>
       <div class="Starwars">
       <h1>Liste des Jedis</h1>
-      <nav>
-        <ul>
+      <table>
+        
           {listItems}
-        </ul>;
-      </nav>
+        
+      </table>
       
     </div>
     </body>

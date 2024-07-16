@@ -14,8 +14,7 @@ function LosAngeles() {
         </div>
         
             <Routes>
-              <Route path="/Home" element={<Home />}/>
-            
+              <Route path="/Home" element={<Home />}/>s
             </Routes>
         <div class='Texte'>
         Los Angeles c'est clairement surcoté...

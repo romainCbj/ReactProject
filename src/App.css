@@ -130,4 +130,14 @@ table, th, td {
 input{
   margin-top: 2%;
   border-radius: 10px;
+  height: 30px;
+}
+
+button {
+  margin-top: 2%;
+  border-radius: 10px;
+  height: 30px;
+}
+.thText {
+  margin-top: 1%;
 }

@@ -22,12 +22,16 @@ function ToDo() {
         <div>
             <input type="Text" placeholder="Saisissez une tache" onKeyDown={submit}></input>
             <table>
-                <th>tache</th>
+                <th><div className="thText">tache</div></th>
                 <th>Action</th>
                 <tbody>
                     {taskList.length>0 ? taskList.map((task => 
-                        <tr >
-                            <td>{task.name}</td>
+                        <tr>
+                            <td>
+                                <div>
+                                    {task.name}
+                                </div>
+                            </td>
                             <td><button onClick={() => confirmed(task)}>OK</button></td>
                         </tr>))  
                     : null}
