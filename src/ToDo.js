@@ -13,11 +13,19 @@ function ToDo() {
     
     function submit(e) {
         if (e.key === 'Enter' && e.target.value !=="") {
-            setTaskList([
-                ...taskList,
-                {  name: e.target.value, date :  Date() }
-              ]);
-              setTask("");
+            if(taskList.filter(f=>f.name == e.target.value).length > 0)
+            {
+
+            }
+            else
+            {
+                setTaskList([
+                    ...taskList,
+                    {  name: e.target.value, date :  Date() }
+                  ]);
+                  setTask("");
+            }
+
          }
        }
 
@@ -35,7 +43,7 @@ function ToDo() {
                                     {task.name}
                                 </div>
                             </td>
-                            <td><button onClick={() => confirmed(task)}>OK</button></td>
+                            <td><button onClick={() => confirmed(task)}>Supprimer</button></td>
                         </tr>))  
                     : null}
                 </tbody>
