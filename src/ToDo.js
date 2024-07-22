@@ -5,6 +5,8 @@ import ReactDOM from 'react-dom/client';
 
 function ToDo() {
     const [taskList, setTaskList] = useState([]);
+    const [task, setTask] = useState("");
+    const onInput = (e) => setTask(e.target.value);
     function confirmed(e) {
         setTaskList(taskList.filter(a=>a.name !== e.name));
     }
@@ -15,12 +17,13 @@ function ToDo() {
                 ...taskList,
                 {  name: e.target.value, date :  Date() }
               ]);
+              setTask("");
          }
        }
 
     return (
         <div>
-            <input type="Text" placeholder="Saisissez une tache" onKeyDown={submit}></input>
+            <input value ={task} placeholder="Saisissez une tache" onKeyDown={submit} onInput={onInput}></input>
             <table>
                 <th><div className="thText">tache</div></th>
                 <th>Action</th>
