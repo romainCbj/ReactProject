@@ -33,7 +33,6 @@ const Formulaire = () => {
     }, []);
 
 
-    let errorMessage = "";
 
     function CheckIfNumberPhoneIsValid(e){
       const value = e.target.value;
@@ -56,13 +55,6 @@ const Formulaire = () => {
       }
     }
   
-    function Submit(e) {
-      e.preventDefault();
-      console.log('You clicked submit.');
-  
-      const message = "Username : " + formData.username +". Téléphone : "+formData.telephone+ "."
-      alert (message);
-    }
   
 
   
@@ -81,7 +73,7 @@ const Formulaire = () => {
       }
       else 
       {
-        if (formData.telephone.length != 10){
+        if (formData.telephone.length !== 10){
           errors.telephone = "Un numéro de téléphone est composé de 10 chiffres";
         }
       }
@@ -110,7 +102,7 @@ const Formulaire = () => {
         axios.post(`http://localhost:5118/Form`,  test )
         .then(res => {
           console.log(res);
-          if(res.data == true)
+          if(res.data === true)
           {
               alert (test.username + " a " + test.Age + " ans")
           }

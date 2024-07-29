@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 console.log("App "  + new Date().toString());
 function App() {

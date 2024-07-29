@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import './App.css';
-import ReactDOM from 'react-dom/client';
-
 
 function ToDo() {
     const [taskList, setTaskList] = useState([]);
@@ -13,7 +11,7 @@ function ToDo() {
     
     function submit(e) {
         if (e.key === 'Enter' && e.target.value !=="") {
-            if(taskList.filter(f=>f.name == e.target.value).length > 0)
+            if(taskList.filter(f=>f.name === e.target.value).length > 0)
             {
 
             }
