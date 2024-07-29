@@ -3,7 +3,11 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+header{
+  height: 100vh;
+  background-color: blue;
+  float: left;
+}
 body {
   padding: 1%;
   margin: 0;
@@ -15,7 +19,7 @@ body {
 
 .App {
   width: 200px; /* Set a width if you like */
-  height: 1000px;
+  min-height: 100vh;
   background-color: #eee; 
   float: left;
 
